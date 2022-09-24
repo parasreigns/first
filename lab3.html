@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<style>
+			body{
+				text-align:center;
+			}
+			*{
+			margin: 1px;
+			}
+			#div1{
+				background-color: rgb(239, 239, 243);
+				padding:10px;
+			}
+			#div2{
+				background-color:rgb(246, 244, 247);
+				padding:10px;
+			}
+			#div3{
+				background-color:rgb(247, 244, 246);
+				border:3px solid rgb(243, 242, 243);
+				padding:3px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+		<p> Click on the Button below:</p>
+		<button onclick=" displayName()"> Display Name</button><br>
+		<button onclick="displayreg()">Display Registraion</button>
+		</div>
+		
+		<div id="div2">
+		<img onmouseover="largePic(this)" onmouseout="normPic(this)" src="C:\Users\CSE\Pictures\Saved Pictures\wallpapersden.com_itachi-uchiha-hd-naruto-art_3840x2160.jpg" width="320px" height="180px"><br>
+		<p onmouseover="largeName(this)" onmouseout="normName(this)" src="fontsize:100%;">ITACHI UCHIA</p>
+		</div>
+		
+		<div id="div3">
+			paras_202000510@smit.smu.edu.in
+		</div>
+		<script>
+			function displayName(){
+				alert("Name: PARAS SINGH");
+			}
+			function displayreg(){
+				alert("Registration:202000510");
+			}
+			function largePic(x){
+				x.style.width="640px";
+				x.style.height="320px";
+			}
+			function normPic(x){
+				x.style.width="320px";
+				x.style.height="180px";
+			}
+			function largeName(x){
+				x.style.fontSize="200%";
+			}
+			function normName(x){
+				x.style.fontSize="100%";
+			}
+		</script>
+	</body>
+</html>
